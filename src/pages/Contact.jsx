@@ -11,18 +11,57 @@ const Contact = () => {
         message: ''
     });
     const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Simulate submission
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 1000);
+        setIsSubmitting(true);
+        setError(null);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    access_key: '9b399468-75ef-4942-92f0-4e75022f3e92',
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    subject: `Drones & Stuff: ${formData.subject}`,
+                    message: formData.message,
+                    from_name: 'Drones & Stuff Website',
+                    to: 'info@dronesandstuff.com'
+                })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setSubmitted(true);
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    subject: 'Drone Services Quote',
+                    message: ''
+                });
+            } else {
+                throw new Error(data.message || 'Something went wrong');
+            }
+        } catch (err) {
+            setError('Failed to send message. Please try again or email us directly at info@dronesandstuff.com');
+            console.error('Form submission error:', err);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (submitted) {
@@ -132,8 +171,28 @@ const Contact = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem' }}>
-                                Send Message <Send size={18} style={{ marginLeft: '0.5rem' }} />
+                            {/* Error Message */}
+                            {error && (
+                                <div style={{
+                                    padding: '1rem',
+                                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                                    border: '1px solid rgba(239, 68, 68, 0.3)',
+                                    borderRadius: '8px',
+                                    color: '#ef4444',
+                                    fontSize: '0.95rem'
+                                }}>
+                                    {error}
+                                </div>
+                            )}
+
+                            <button
+                                type="submit"
+                                className="btn btn-primary"
+                                style={{ marginTop: '1rem' }}
+                                disabled={isSubmitting}
+                            >
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
+                                {!isSubmitting && <Send size={18} style={{ marginLeft: '0.5rem' }} />}
                             </button>
                         </form>
                     </div>
