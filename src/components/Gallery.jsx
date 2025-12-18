@@ -1,26 +1,127 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
+// All images captured by our professional drone pilots
 const images = [
     {
-        src: "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=800&q=80",
+        src: "/images/gallery/DJI_0007.JPG",
+        category: "Aerial Survey",
+        caption: "Landscape Documentation"
+    },
+    {
+        src: "/images/gallery/DJI_0486.JPG",
+        category: "Aerial Photography",
+        caption: "High-Altitude Capture"
+    },
+    {
+        src: "/images/gallery/DJI_0533 2.JPG",
         category: "Infrastructure",
-        caption: "Bridge Inspection & Survey"
+        caption: "Urban Development Survey"
     },
     {
-        src: "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=800&q=80",
-        category: "Training",
-        caption: "Professional Pilot Training"
+        src: "/images/gallery/DJI_0573.JPG",
+        category: "Aerial Mapping",
+        caption: "Terrain Analysis"
     },
     {
-        src: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80",
-        category: "Nature",
-        caption: "Environmental Monitoring"
+        src: "/images/gallery/DJI_0586.JPG",
+        category: "Construction",
+        caption: "Project Site Overview"
     },
     {
-        src: "https://images.unsplash.com/photo-1506947411487-a56738267384?w=800&q=80",
-        category: "Creative",
-        caption: "Cinematic Event Coverage"
+        src: "/images/gallery/DJI_0670.JPG",
+        category: "Environmental",
+        caption: "Natural Landscape Study"
+    },
+    {
+        src: "/images/gallery/DJI_0869.JPG",
+        category: "Real Estate",
+        caption: "Property Aerial View"
+    },
+    {
+        src: "/images/gallery/DJI_20240526204642_0029_D 2.JPG",
+        category: "Evening Shoot",
+        caption: "Sunset Documentation"
+    },
+    {
+        src: "/images/gallery/DJI_20240526204827_0030_D.JPG",
+        category: "Twilight",
+        caption: "Golden Hour Capture"
+    },
+    {
+        src: "/images/gallery/DJI_20240601105214_0033_D.JPG",
+        category: "Daytime Survey",
+        caption: "Midday Reconnaissance"
+    },
+    {
+        src: "/images/gallery/DJI_20240604171003_0087_D.JPG",
+        category: "Infrastructure",
+        caption: "Development Monitoring"
+    },
+    {
+        src: "/images/gallery/DJI_20240607085340_0112_D.JPG",
+        category: "Morning Shoot",
+        caption: "Early Morning Survey"
+    },
+    {
+        src: "/images/gallery/DJI_20240612211853_0168_D.JPG",
+        category: "Night Photography",
+        caption: "Low Light Capture"
+    },
+    {
+        src: "/images/gallery/DJI_20240629171326_0424_D.JPG",
+        category: "Landscape",
+        caption: "Geographical Documentation"
+    },
+    {
+        src: "/images/gallery/GOPR1914.JPG",
+        category: "Action Cam",
+        caption: "Dynamic Perspective"
+    },
+    {
+        src: "/images/gallery/HYPERLAPSE_0098.JPG",
+        category: "Hyperlapse",
+        caption: "Time-Lapse Sequence"
+    },
+    {
+        src: "/images/gallery/PANO_0001.JPG",
+        category: "Panorama",
+        caption: "360° Landscape View"
+    },
+    {
+        src: "/images/gallery/PANO_0001 2.JPG",
+        category: "Panorama",
+        caption: "Wide Angle Vista"
+    },
+    {
+        src: "/images/gallery/PANO_0004.JPG",
+        category: "Panorama",
+        caption: "Comprehensive Site View"
+    },
+    {
+        src: "/images/gallery/PANO_0008.JPG",
+        category: "Panorama",
+        caption: "Full Horizon Capture"
+    },
+    {
+        src: "/images/gallery/PANO_0012.JPG",
+        category: "Panorama",
+        caption: "Expansive Landscape"
+    },
+    {
+        src: "/images/gallery/dji_export_20241005_131221_1728148341785_sphere_screenshot.jpg",
+        category: "360° Sphere",
+        caption: "Interactive Virtual Tour"
+    },
+    {
+        src: "/images/gallery/dji_export_20241005_131232_1728148352709_sphere_screenshot.jpg",
+        category: "360° Sphere",
+        caption: "Immersive Aerial View"
+    },
+    {
+        src: "/images/gallery/dji_export_20241005_131236_1728148356787_sphere_screenshot.jpg",
+        category: "360° Sphere",
+        caption: "Spherical Panorama"
     }
 ];
 

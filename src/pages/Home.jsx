@@ -57,7 +57,12 @@ const Home = () => {
                 <div className="container">
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                         <h2 className="text-gradient" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Featured Operations</h2>
-                        <p style={{ color: 'var(--secondary)' }}>A glimpse of our aerial capabilities across Connecticut.</p>
+                        <p style={{ color: 'var(--secondary)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+                            A glimpse of our aerial capabilities across Connecticut.
+                        </p>
+                        <p style={{ color: 'var(--accent)', fontSize: '0.95rem', fontStyle: 'italic', opacity: 0.9 }}>
+                            ✈️ All images captured by our FAA Part 107 Certified pilot
+                        </p>
                     </div>
                     <Gallery />
                 </div>
