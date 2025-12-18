@@ -24,15 +24,71 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Pilot Portrait Section */}
+            {/* Meet Ernest - Owner & Operator */}
             <section className="section" style={{ backgroundColor: 'var(--bg-dark)' }}>
                 <div className="container">
-                    <div className="hover-card img-hover-zoom" style={{ maxWidth: '900px', margin: '0 auto 4rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
-                        <img
-                            src="/images/about-pilot.png"
-                            alt="FAA Certified Remote Pilot"
-                            style={{ width: '100%', display: 'block' }}
-                        />
+                    <h2 className="text-gradient" style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '2.5rem' }}>Meet Ernest</h2>
+                    <p style={{ textAlign: 'center', color: 'var(--secondary)', maxWidth: '700px', margin: '0 auto 3rem', fontSize: '1.1rem' }}>
+                        Owner, Operator & FAA Part 107 Certified Remote Pilot
+                    </p>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+                        {/* Ernest's Photo */}
+                        <div className="hover-card img-hover-zoom" style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
+                            <img
+                                src="/images/ernest-owner.jpg"
+                                alt="Ernest - Owner & FAA Certified Remote Pilot"
+                                style={{ width: '100%', display: 'block' }}
+                            />
+                        </div>
+
+                        {/* Ernest's Bio */}
+                        <div>
+                            <h3 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: 'var(--accent)' }}>
+                                Professional Drone Services Since 2018
+                            </h3>
+                            <div style={{ color: 'var(--secondary)', lineHeight: '1.8', fontSize: '1.05rem' }}>
+                                <p style={{ marginBottom: '1.5rem' }}>
+                                    Ernest is the founder and sole operator of <strong style={{ color: '#fff' }}>Drones & Stuff</strong>, bringing years of expertise in aerial photography, videography, and commercial drone operations across Connecticut.
+                                </p>
+                                <p style={{ marginBottom: '1.5rem' }}>
+                                    As an <strong style={{ color: '#fff' }}>FAA Part 107 Certified Remote Pilot</strong>, Ernest specializes in:
+                                </p>
+                                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                                    <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>✈️</span>
+                                        Real Estate & Property Documentation
+                                    </li>
+                                    <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>✈️</span>
+                                        Construction Progress Monitoring
+                                    </li>
+                                    <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>✈️</span>
+                                        Infrastructure Inspections
+                                    </li>
+                                    <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>✈️</span>
+                                        Event Coverage & Promotional Videos
+                                    </li>
+                                    <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+                                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>✈️</span>
+                                        Drone Pilot Training & Consultation
+                                    </li>
+                                </ul>
+                                <p style={{ marginBottom: '1.5rem' }}>
+                                    With a commitment to <strong style={{ color: '#fff' }}>safety, professionalism, and quality</strong>, Ernest has completed hundreds of successful missions for clients ranging from homeowners to large commercial enterprises.
+                                </p>
+                                <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)', backgroundColor: 'rgba(251, 191, 36, 0.05)' }}>
+                                    <p style={{ margin: 0, fontStyle: 'italic', fontSize: '0.95rem' }}>
+                                        <strong style={{ color: 'var(--accent)' }}>"I founded Drones & Stuff to bring cutting-edge aerial technology to Connecticut businesses and residents. Every project receives my personal attention and expertise."</strong>
+                                    </p>
+                                    <p style={{ margin: '0.5rem 0 0 0', textAlign: 'right', fontSize: '0.9rem' }}>
+                                        — Ernest, Owner & Chief Pilot
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -66,19 +122,16 @@ const About = () => {
             </section>
 
             <section className="section">
-                <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap' }}>
-                    <div style={{ maxWidth: '500px' }}>
-                        <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>FAA Certified</h2>
-                        <p style={{ color: 'var(--secondary)', marginBottom: '1.5rem' }}>
-                            Our operations are led by an FAA Part 107 Certified Remote Pilot, ensuring compliance with all federal aviation regulations.
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+                        <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>FAA Certified & Insured</h2>
+                        <p style={{ color: 'var(--secondary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+                            All operations are led by Ernest, an FAA Part 107 Certified Remote Pilot, ensuring full compliance with federal aviation regulations and the highest safety standards.
                         </p>
-                        <div className="hover-card" style={{ padding: '1rem', border: '1px solid var(--accent)', borderRadius: '8px', display: 'inline-block', color: 'var(--accent)' }}>
+                        <div className="hover-card" style={{ padding: '1.5rem', border: '2px solid var(--accent)', borderRadius: '12px', display: 'inline-block', color: 'var(--accent)', backgroundColor: 'rgba(251, 191, 36, 0.05)' }}>
+                            <strong>FAA Remote Pilot Certificate</strong><br />
                             License # Available Upon Request
                         </div>
-                    </div>
-                    {/* Headshot Placeholder - Removed since we have the main portrait above, kept for layout if needed or remove entirely. Keeping layout for now but refining style */}
-                    <div className="hover-card" style={{ width: '300px', height: '300px', backgroundColor: '#334155', borderRadius: '12px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <Target size={64} color="var(--secondary)" />
                     </div>
                 </div>
             </section>
