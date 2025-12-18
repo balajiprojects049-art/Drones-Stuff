@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Twitter, Instagram, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -53,8 +53,24 @@ const Footer = () => {
                                 <a href="mailto:info@dronesandstuff.com" className="footer-link" style={{ marginLeft: 0 }}>info@dronesandstuff.com</a>
                             </li>
                             <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                                <Phone size={20} color="var(--accent)" />
-                                <a href="tel:+15551234567" className="footer-link" style={{ marginLeft: 0 }}>(555) 123-4567</a>
+                                <div style={{
+                                    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                                    border: '1px solid rgba(34, 197, 94, 0.3)',
+                                    borderRadius: '20px',
+                                    padding: '6px 12px',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '8px'
+                                }}>
+                                    <div style={{
+                                        width: '8px',
+                                        height: '8px',
+                                        borderRadius: '50%',
+                                        backgroundColor: '#22c55e',
+                                        boxShadow: '0 0 10px rgba(34, 197, 94, 0.5)'
+                                    }}></div>
+                                    <span style={{ color: '#22c55e', fontSize: '0.9rem', fontWeight: '600' }}>Available 24/7</span>
+                                </div>
                             </li>
                         </ul>
 
