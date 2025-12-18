@@ -3,25 +3,25 @@ import { X, Play } from 'lucide-react';
 
 // All images and videos captured by our professional drone pilots
 const mediaItems = [
-    // Videos
-    {
-        type: "video",
-        src: "/images/gallery/40 MPH Aerial High Tech Track and Trace Test.MP4",
-        category: "Action Video",
-        caption: "40 MPH High-Speed Tracking"
-    },
-    {
-        type: "video",
-        src: "/images/gallery/3Eagles in Flight.MP4",
-        category: "Wildlife Video",
-        caption: "Eagles In Flight"
-    },
-    {
-        type: "video",
-        src: "/images/gallery/2F6AFF38-CF17-451D-9652-C07328EE1E9B.mp4",
-        category: "Aerial Video",
-        caption: "Cinematic Drone Footage"
-    },
+    // Videos - TEMPORARILY HIDDEN (uncomment and update URLs when ready)
+    // {
+    //     type: "video",
+    //     src: "/images/gallery/40 MPH Aerial High Tech Track and Trace Test.MP4",
+    //     category: "Action Video",
+    //     caption: "40 MPH High-Speed Tracking"
+    // },
+    // {
+    //     type: "video",
+    //     src: "/images/gallery/3Eagles in Flight.MP4",
+    //     category: "Wildlife Video",
+    //     caption: "Eagles In Flight"
+    // },
+    // {
+    //     type: "video",
+    //     src: "/images/gallery/2F6AFF38-CF17-451D-9652-C07328EE1E9B.mp4",
+    //     category: "Aerial Video",
+    //     caption: "Cinematic Drone Footage"
+    // },
     // Images
     {
         type: "image",

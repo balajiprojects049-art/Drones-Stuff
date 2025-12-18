@@ -61,7 +61,7 @@ const Home = () => {
                             A glimpse of our aerial capabilities across Connecticut.
                         </p>
                         <p style={{ color: 'var(--accent)', fontSize: '0.95rem', fontStyle: 'italic', opacity: 0.9 }}>
-                            📸 All photos & videos captured by our FAA Part 107 Certified pilot
+                            📸 All images captured by our FAA Part 107 Certified pilot
                         </p>
                     </div>
                     <Gallery />
