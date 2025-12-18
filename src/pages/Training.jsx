@@ -108,6 +108,130 @@ const Training = () => {
                 </div>
             </section>
 
+            {/* Video Demonstrations Section */}
+            <section className="section" style={{ backgroundColor: 'var(--bg-dark)' }}>
+                <div className="container">
+                    <h2 className="text-gradient" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Professional Flight Demonstrations</h2>
+                    <p style={{ textAlign: 'center', color: 'var(--secondary)', maxWidth: '800px', margin: '0 auto 3rem', fontSize: '1.1rem' }}>
+                        Watch real examples of advanced drone techniques captured by our FAA Part 107 Certified instructor. Each video showcases the skills and techniques you'll master in our training programs.
+                    </p>
+
+                    <div style={{ display: 'grid', gap: '3rem' }}>
+                        {/* Video 1: High-Speed Tracking */}
+                        <div className="hover-card glass-panel" style={{ padding: '2rem', borderRadius: '16px', overflow: 'hidden' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
+                                <div>
+                                    <video
+                                        src="/images/gallery/40 MPH Aerial High Tech Track and Trace Test.MP4"
+                                        controls
+                                        style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}
+                                    />
+                                </div>
+                                <div>
+                                    <h3 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'var(--accent)' }}>40 MPH High-Speed Tracking</h3>
+                                    <div style={{ color: 'var(--secondary)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Drone Used:</strong> DJI Mavic 3 Pro
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Flight Mode:</strong> Sport Mode with ActiveTrack 5.0
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Altitude:</strong> 30-50 feet AGL (Above Ground Level)
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Speed:</strong> 40 MPH sustained tracking
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)' }}>
+                                        <p style={{ fontSize: '0.95rem', color: '#cbd5e1', margin: 0, lineHeight: '1.6' }}>
+                                            <strong style={{ color: 'var(--accent)' }}>What You'll Learn:</strong> Advanced subject tracking, maintaining smooth gimbal movement at high speeds, adjusting to rapid directional changes, and using intelligent flight modes for professional results.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Video 2: Eagles in Flight */}
+                        <div className="hover-card glass-panel" style={{ padding: '2rem', borderRadius: '16px', overflow: 'hidden' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
+                                <div style={{ order: 2 }}>
+                                    <video
+                                        src="/images/gallery/3Eagles in Flight.MP4"
+                                        controls
+                                        style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}
+                                    />
+                                </div>
+                                <div style={{ order: 1 }}>
+                                    <h3 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'var(--accent)' }}>Eagles in Flight - Wildlife Documentation</h3>
+                                    <div style={{ color: 'var(--secondary)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Drone Used:</strong> DJI Air 3 (Dual Camera System)
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Camera Settings:</strong> 4K 60fps, 70mm telephoto lens
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Distance:</strong> 150+ feet from subjects (wildlife safe)
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Technique:</strong> Hover and observe, minimal movement
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)' }}>
+                                        <p style={{ fontSize: '0.95rem', color: '#cbd5e1', margin: 0, lineHeight: '1.6' }}>
+                                            <strong style={{ color: 'var(--accent)' }}>What You'll Learn:</strong> Wildlife photography ethics, telephoto shooting techniques, maintaining safe distances, reading animal behavior, and using environmental awareness to capture natural moments without disturbance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Video 3: Cinematic Footage */}
+                        <div className="hover-card glass-panel" style={{ padding: '2rem', borderRadius: '16px', overflow: 'hidden' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
+                                <div>
+                                    <video
+                                        src="/images/gallery/2F6AFF38-CF17-451D-9652-C07328EE1E9B.mp4"
+                                        controls
+                                        style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}
+                                    />
+                                </div>
+                                <div>
+                                    <h3 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'var(--accent)' }}>Cinematic Aerial Footage</h3>
+                                    <div style={{ color: 'var(--secondary)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Drone Used:</strong> DJI Mini 4 Pro
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Camera Settings:</strong> 4K 30fps, D-Log color profile
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Flight Pattern:</strong> Smooth ascending orbit with gradual zoom
+                                        </p>
+                                        <p style={{ marginBottom: '1rem' }}>
+                                            <strong style={{ color: '#fff' }}>Post-Processing:</strong> Color grading, stabilization, speed ramping
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)' }}>
+                                        <p style={{ fontSize: '0.95rem', color: '#cbd5e1', margin: 0, lineHeight: '1.6' }}>
+                                            <strong style={{ color: 'var(--accent)' }}>What You'll Learn:</strong> Cinematic camera movements, manual exposure control, shooting in LOG for professional color grading, coordinating multi-axis movements, and achieving broadcast-quality aerial footage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{ marginTop: '3rem', textAlign: 'center', padding: '2rem', backgroundColor: 'rgba(249, 115, 22, 0.05)', borderRadius: '12px', border: '1px solid rgba(249, 115, 22, 0.2)' }}>
+                        <p style={{ fontSize: '1.1rem', color: '#cbd5e1', margin: 0, lineHeight: '1.7' }}>
+                            <strong style={{ color: 'var(--accent)' }}>All techniques demonstrated here are taught in our Part 107 Commercial Training program.</strong><br />
+                            Learn the skills to capture professional-grade footage for real estate, events, construction, and creative projects.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Training Approach */}
             <section className="section" style={{ backgroundColor: 'var(--bg-dark)' }}>
                 <div className="container">
