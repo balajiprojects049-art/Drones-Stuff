@@ -61,7 +61,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     style={{ fontSize: 'clamp(3rem, 5vw, 5rem)', fontWeight: '800', marginBottom: '1.5rem', lineHeight: '1.1' }}
                 >
-                    Drones & Stuff
+                    Drone-Stuff
                 </motion.h1>
 
                 <motion.p

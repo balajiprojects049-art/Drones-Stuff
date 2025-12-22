@@ -322,6 +322,7 @@ const Gallery = () => {
                             src={selectedMedia.src}
                             controls
                             autoPlay
+                            muted={selectedMedia.caption === "Cinematic Drone Footage"}
                             style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: '8px' }}
                             onClick={(e) => e.stopPropagation()}
                         />

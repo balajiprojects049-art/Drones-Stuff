@@ -45,7 +45,7 @@ const Navbar = () => {
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
         <Link to="/" className="logo">
-          <span className="text-gradient" style={{ fontSize: '1.5rem', fontWeight: '800', letterSpacing: '-0.5px' }}>Drones & Stuff</span>
+          <span className="text-gradient" style={{ fontSize: '1.5rem', fontWeight: '800', letterSpacing: '-0.5px' }}>Drone-Stuff</span>
         </Link>
         <style>{`
           .desktop-menu .nav-link {

@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div>
                         <Link to="/" style={{ display: 'inline-block', marginBottom: '1.5rem' }}>
-                            <h3 className="text-gradient" style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>Drones & Stuff</h3>
+                            <h3 className="text-gradient" style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>Drone-Stuff</h3>
                         </Link>
                         <p style={{ marginBottom: '2rem', lineHeight: '1.7', color: '#94a3b8' }}>
                             Professional Drone Services, Training, and Security Solutions.
@@ -50,7 +50,7 @@ const Footer = () => {
                             </li>
                             <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                 <Mail size={20} color="var(--accent)" />
-                                <a href="mailto:info@dronesandstuff.com" className="footer-link" style={{ marginLeft: 0 }}>info@dronesandstuff.com</a>
+                                <a href="mailto:info@drone-stuff.com" className="footer-link" style={{ marginLeft: 0 }}>info@drone-stuff.com</a>
                             </li>
                             <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                 <div style={{
@@ -101,7 +101,7 @@ const Footer = () => {
                 </div>
 
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-                    <p style={{ fontSize: '0.9rem', color: '#64748b' }}>&copy; {new Date().getFullYear()} Drones & Stuff. All rights reserved.</p>
+                    <p style={{ fontSize: '0.9rem', color: '#64748b' }}>&copy; {new Date().getFullYear()} Drone-Stuff. All rights reserved.</p>
                     <div style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem' }}>
                         <a href="#" className="footer-link" style={{ marginLeft: 0 }}>Privacy Policy</a>
                         <a href="#" className="footer-link" style={{ marginLeft: 0 }}>Terms of Service</a>

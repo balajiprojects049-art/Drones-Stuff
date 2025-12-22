@@ -35,10 +35,10 @@ const Contact = () => {
                     name: formData.name,
                     email: formData.email,
                     phone: formData.phone,
-                    subject: `Drones & Stuff: ${formData.subject}`,
+                    subject: `Drone-Stuff: ${formData.subject}`,
                     message: formData.message,
-                    from_name: 'Drones & Stuff Website',
-                    to: 'info@dronesandstuff.com'
+                    from_name: 'Drone-Stuff Website',
+                    to: 'info@drone-stuff.com'
                 })
             });
 
@@ -57,7 +57,7 @@ const Contact = () => {
                 throw new Error(data.message || 'Something went wrong');
             }
         } catch (err) {
-            setError('Failed to send message. Please try again or email us directly at info@dronesandstuff.com');
+            setError('Failed to send message. Please try again or email us directly at info@drone-stuff.com');
             console.error('Form submission error:', err);
         } finally {
             setIsSubmitting(false);
@@ -74,7 +74,7 @@ const Contact = () => {
                 >
                     <div className="glass-panel" style={{ padding: '3rem', borderRadius: '16px', inlineSize: 'fit-content', margin: '0 auto' }}>
                         <h2 style={{ color: 'var(--accent)', marginBottom: '1rem' }}>Message Sent!</h2>
-                        <p style={{ color: 'var(--secondary)' }}>Thank you for contacting Drones & Stuff. We will get back to you shortly.</p>
+                        <p style={{ color: 'var(--secondary)' }}>Thank you for contacting Drone-Stuff. We will get back to you shortly.</p>
                         <button
                             onClick={() => setSubmitted(false)}
                             className="btn btn-primary"
@@ -199,7 +199,7 @@ const Contact = () => {
 
                     <div style={{ marginTop: '3rem', textAlign: 'center' }}>
                         <p style={{ color: 'var(--secondary)' }}>
-                            Alternative Contact Info: <a href="mailto:info@dronesandstuff.com" style={{ color: 'var(--accent)' }}>info@dronesandstuff.com</a>
+                            Alternative Contact Info: <a href="mailto:info@drone-stuff.com" style={{ color: 'var(--accent)' }}>info@drone-stuff.com</a>
                         </p>
                     </div>
                 </div>

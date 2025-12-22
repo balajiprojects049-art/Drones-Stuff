@@ -19,7 +19,7 @@ const About = () => {
                 <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                     <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', fontWeight: '800' }}>Professionalism & Discretion</h1>
                     <p style={{ fontSize: '1.3rem', color: '#cbd5e1', maxWidth: '800px', margin: '0 auto', lineHeight: '1.8' }}>
-                        Drones & Stuff is operated by an FAA Part 107 Certified Remote Pilot with extensive commercial flight experience across multiple sectors. Every mission prioritizes safety, compliance, and confidentiality.
+                        Drone-Stuff is operated by an FAA Part 107 Certified Remote Pilot with extensive commercial flight experience across multiple sectors. Every mission prioritizes safety, compliance, and confidentiality.
                     </p>
                 </div>
             </section>
@@ -49,7 +49,7 @@ const About = () => {
                             </h3>
                             <div style={{ color: 'var(--secondary)', lineHeight: '1.8', fontSize: '1.05rem' }}>
                                 <p style={{ marginBottom: '1.5rem' }}>
-                                    Ernest is the founder and sole operator of <strong style={{ color: '#fff' }}>Drones & Stuff</strong>, bringing years of expertise in aerial photography, videography, and commercial drone operations across Connecticut.
+                                    Ernest is the founder and sole operator of <strong style={{ color: '#fff' }}>Drone-Stuff</strong>, bringing years of expertise in aerial photography, videography, and commercial drone operations across Connecticut.
                                 </p>
                                 <p style={{ marginBottom: '1.5rem' }}>
                                     As an <strong style={{ color: '#fff' }}>FAA Part 107 Certified Remote Pilot</strong>, Ernest specializes in:
@@ -81,7 +81,7 @@ const About = () => {
                                 </p>
                                 <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)', backgroundColor: 'rgba(251, 191, 36, 0.05)' }}>
                                     <p style={{ margin: 0, fontStyle: 'italic', fontSize: '0.95rem' }}>
-                                        <strong style={{ color: 'var(--accent)' }}>"I founded Drones & Stuff to bring cutting-edge aerial technology to Connecticut businesses and residents. Every project receives my personal attention and expertise."</strong>
+                                        <strong style={{ color: 'var(--accent)' }}>"I founded Drone-Stuff to bring cutting-edge aerial technology to Connecticut businesses and residents. Every project receives my personal attention and expertise."</strong>
                                     </p>
                                     <p style={{ margin: '0.5rem 0 0 0', textAlign: 'right', fontSize: '0.9rem' }}>
                                         — Ernest, Owner & Chief Pilot

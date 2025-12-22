@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favicon Generator</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="512" height="512"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Background
+        ctx.fillStyle = '#1A1F3A';
+        ctx.fillRect(0, 0, 512, 512);
+
+        // Drone center body
+        ctx.fillStyle = '#FF6B35';
+        ctx.beginPath();
+        ctx.arc(256, 256, 40, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Arms
+        ctx.strokeStyle = '#FF6B35';
+        ctx.lineWidth = 15;
+        ctx.lineCap = 'round';
+
+        ctx.beginPath();
+        ctx.moveTo(256, 256);
+        ctx.lineTo(128, 128);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(256, 256);
+        ctx.lineTo(384, 128);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(256, 256);
+        ctx.lineTo(128, 384);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(256, 256);
+        ctx.lineTo(384, 384);
+        ctx.stroke();
+
+        // Propellers
+        ctx.fillStyle = '#4ECDC4';
+        ctx.globalAlpha = 0.8;
+
+        ctx.beginPath();
+        ctx.arc(128, 128, 50, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(384, 128, 50, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(128, 384, 50, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(384, 384, 50, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Camera indicator
+        ctx.fillStyle = '#FFE66D';
+        ctx.globalAlpha = 1;
+        ctx.beginPath();
+        ctx.arc(256, 256, 15, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Download
+        setTimeout(() => {
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'favicon-512.png';
+                a.click();
+            });
+        }, 100);
+    </script>
+</body>
+
+</html>

@@ -194,6 +194,7 @@ const Training = () => {
                                     <video
                                         src="https://res.cloudinary.com/dm7eowl2p/video/upload/v1766071210/2F6AFF38-CF17-451D-9652-C07328EE1E9B_libetf.mov"
                                         controls
+                                        muted
                                         style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}
                                     />
                                 </div>
@@ -215,7 +216,7 @@ const Training = () => {
                                     </div>
                                     <div className="glass-panel" style={{ padding: '1.2rem', borderRadius: '8px', border: '1px solid rgba(251, 191, 36, 0.2)' }}>
                                         <p style={{ fontSize: '0.95rem', color: '#cbd5e1', margin: 0, lineHeight: '1.6' }}>
-                                            <strong style={{ color: 'var(--accent)' }}>What You'll Learn:</strong> Cinematic camera movements, manual exposure control, shooting in LOG for professional color grading, coordinating multi-axis movements, and achieving broadcast-quality aerial footage.
+                                            <strong style={{ color: 'var(--accent)' }}>What You'll Learn:</strong> Cinematic camera movements, manual exposure control, shooting in D-Log for professional color grading, coordinating multi-axis movements, and achieving broadcast-quality aerial footage.
                                         </p>
                                     </div>
                                 </div>
