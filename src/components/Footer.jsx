@@ -53,6 +53,10 @@ const Footer = () => {
                                 <a href="mailto:info@drone-stuff.com" className="footer-link" style={{ marginLeft: 0 }}>info@drone-stuff.com</a>
                             </li>
                             <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                                <Mail size={20} color="var(--accent)" />
+                                <a href="mailto:general@drone-stuff.com" className="footer-link" style={{ marginLeft: 0 }}>general@drone-stuff.com</a>
+                            </li>
+                            <li style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                 <div style={{
                                     backgroundColor: 'rgba(34, 197, 94, 0.1)',
                                     border: '1px solid rgba(34, 197, 94, 0.3)',
@@ -103,8 +107,8 @@ const Footer = () => {
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                     <p style={{ fontSize: '0.9rem', color: '#64748b' }}>&copy; {new Date().getFullYear()} Drone-Stuff. All rights reserved.</p>
                     <div style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem' }}>
-                        <a href="#" className="footer-link" style={{ marginLeft: 0 }}>Privacy Policy</a>
-                        <a href="#" className="footer-link" style={{ marginLeft: 0 }}>Terms of Service</a>
+                        <Link to="/privacy-policy" className="footer-link" style={{ marginLeft: 0 }}>Privacy Policy</Link>
+                        <Link to="/terms-and-conditions" className="footer-link" style={{ marginLeft: 0 }}>Terms and Conditions</Link>
                     </div>
                 </div>
             </div>

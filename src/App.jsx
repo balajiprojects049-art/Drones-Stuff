@@ -12,6 +12,8 @@ const Training = lazy(() => import('./pages/Training'));
 const Community = lazy(() => import('./pages/Community'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 
 // Loading component
 const Loading = () => (
@@ -43,6 +45,8 @@ function App() {
               <Route path="/community" element={<Community />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
           </Suspense>
         </main>
