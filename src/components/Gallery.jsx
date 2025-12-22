@@ -16,12 +16,7 @@ const mediaItems = [
         category: "Wildlife Video",
         caption: "Eagles In Flight"
     },
-    {
-        type: "video",
-        src: "https://res.cloudinary.com/dm7eowl2p/video/upload/v1766071210/2F6AFF38-CF17-451D-9652-C07328EE1E9B_libetf.mov",
-        category: "Aerial Video",
-        caption: "Cinematic Drone Footage"
-    },
+
     // Images
     {
         type: "image",
@@ -322,7 +317,6 @@ const Gallery = () => {
                             src={selectedMedia.src}
                             controls
                             autoPlay
-                            muted={selectedMedia.caption === "Cinematic Drone Footage"}
                             style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: '8px' }}
                             onClick={(e) => e.stopPropagation()}
                         />
